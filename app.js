@@ -1,32 +1,17 @@
-import React from "react";
+window.onload = function () {
 
-export default function App() {
-  return (
-    <div
-      style={{
-        backgroundColor: "black",
-        color: "white",
-        height: "100vh",
-        padding: 20,
-      }}
-    >
-      <h1 style={{ color: "#3b82f6" }}>
-        Gaming Platform
-      </h1>
+  alert("Welcome To Gaming Platform");
 
-      <p>Welcome to your gaming app.</p>
+  const buttons = document.querySelectorAll("button");
 
-      <button
-        style={{
-          backgroundColor: "#2563eb",
-          color: "white",
-          padding: 10,
-          border: "none",
-          borderRadius: 10,
-        }}
-      >
-        Start
-      </button>
-    </div>
-  );
-}
+  buttons.forEach((btn) => {
+
+    btn.addEventListener("click", () => {
+
+      alert("Game launching soon...");
+
+    });
+
+  });
+
+};
